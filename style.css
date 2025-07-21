@@ -290,3 +290,25 @@ section p {
   margin: 5px 0;
 }
 
+#rsvp {
+  background-color: #fff0f5;
+}
+
+#rsvp h2 {
+  color: #d16ba5;
+  font-weight: 700;
+}
+
+#rsvp p {
+  color: #444;
+}
+
+.form-container {
+  max-width: 700px;
+  margin: 0 auto;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+  background-color: #fff;
+  padding: 20px;
+}
