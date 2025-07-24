@@ -303,12 +303,79 @@ section p {
   color: #444;
 }
 
-.form-container {
+/* ---- rsvp section ---- */
+#rsvp {
+  padding: 60px 20px;
+  background-color: #fff0f5;
+  text-align: center;
+}
+
+#rsvp .inner {
   max-width: 700px;
   margin: 0 auto;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
-  background-color: #fff;
-  padding: 20px;
 }
+
+#rsvp h2 {
+  font-family: 'Playfair Display', serif;
+  font-size: 32px;
+  color: #d16ba5;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+#rsvp p {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  color: #444;
+  margin-bottom: 40px;
+  line-height: 1.5;
+}
+
+/* kontener responsywny dla iframe */
+#rsvp .form-container {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+#rsvp .form-container iframe {
+  width: 100%;
+  /* wysokość możesz dostosować według potrzeb */
+  min-height: 600px;
+  border: none;
+}
+
+/* ---- responsywność ---- */
+@media (max-width: 768px) {
+  #rsvp {
+    padding: 40px 15px;
+  }
+  #rsvp h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+  }
+  #rsvp p {
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+  #rsvp .form-container iframe {
+    min-height: 500px;
+  }
+}
+
+@media (max-width: 480px) {
+  #rsvp {
+    padding: 30px 10px;
+  }
+  #rsvp h2 {
+    font-size: 24px;
+  }
+  #rsvp p {
+    font-size: 15px;
+  }
+  #rsvp .form-container iframe {
+    min-height: 450px;
+  }
+}
+
